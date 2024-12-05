@@ -3,7 +3,7 @@
 # desc: sandbox
 # site: https://github.com/kitayoshi47/Pyxel-Sandbox
 # license: MIT
-# version: 0.01
+# version: 0.1
 
 import pyxel
 

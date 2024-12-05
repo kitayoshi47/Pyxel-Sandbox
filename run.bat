@@ -1,1 +1,1 @@
-pyxel run sandbox/sandbox_main.py
+pyxel run sandbox/sandbox.py
