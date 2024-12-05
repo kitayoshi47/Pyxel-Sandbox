@@ -1,5 +1,5 @@
 # Pyxel-Sandbox
-Pyxel実験用プロジェクト
+[Pyxel](https://github.com/kitao/pyxel) 実験用プロジェクト
 
 ![](image/screenshot.png)
 
