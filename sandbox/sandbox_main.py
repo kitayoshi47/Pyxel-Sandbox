@@ -9,15 +9,18 @@ import pyxel
 
 class App:
     def __init__(self):
-        pyxel.init(160, 120)
-        self.x = 0
+        pyxel.init(160, 120, title="Hello Pyxel")
+        pyxel.images[0].load(0, 0, "assets/pyxel_logo_38x16.png")
         pyxel.run(self.update, self.draw)
 
     def update(self):
-        self.x = (self.x + 1) % pyxel.width
+        if pyxel.btnp(pyxel.KEY_Q):
+            pyxel.quit()
 
     def draw(self):
         pyxel.cls(0)
-        pyxel.rect(self.x, 0, 8, 8, 9)
+        pyxel.text(55, 41, "Hello, Pyxel!", pyxel.frame_count % 16)
+        pyxel.blt(61, 66, 0, 0, 0, 38, 16)
+
 
 App()
